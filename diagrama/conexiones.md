@@ -1,17 +1,30 @@
 # Diagrama de conexiones de FLEXI
 
-El sistema utiliza un ESP32, un sensor MPU6050 y un buzzer.
+## Componentes utilizados
+- ESP32-S3
+- Sensor MPU6050
+- Buzzer pasivo
 
-## Componentes
+## Conexiones electrónicas
 
-- ESP32
-- MPU6050
-- Buzzer
-
-## Conexiones
-
-Se incluirá el esquema gráfico con las conexiones reales utilizadas en el prototipo.
+| Componente | Pin ESP32-S3 |
+|---|---|
+| MPU6050 VCC | 3V3 |
+| MPU6050 GND | GND |
+| MPU6050 SDA | GPIO 8 |
+| MPU6050 SCL | GPIO 9 |
+| Buzzer positivo (+) | GPIO 4 |
+| Buzzer negativo (-) | GND |
+| Botón BOOT | GPIO 0 |
 
 ## Funcionamiento
 
-El ESP32 recibe la información del MPU6050 y procesa los cambios de inclinación. Cuando se cumple la condición programada, activa el buzzer para emitir una alerta sonora.
+El MPU6050 registra los cambios de inclinación y movimiento. El ESP32-S3 procesa los datos y compara la inclinación con la posición de referencia guardada durante la calibración.
+
+Cuando se supera el umbral configurado durante el tiempo de tolerancia, el buzzer emite una alerta sonora.
+
+## Configuración del programa
+- Umbral de inclinación: 12 grados.
+- Tiempo de tolerancia: 3 segundos.
+- Recordatorio de movimiento: 30 minutos.
+- Programación: Arduino IDE.
