@@ -1,47 +1,46 @@
-FLEXI
+# FLEXI – Sistema Inteligente de Corrección Postural
 
-1. Descripción del proyecto
+## 1. Descripción del proyecto
 
-FLEXI es un prototipo electrónico diseñado para detectar cambios de inclinación y alertar al usuario mediante una señal sonora emitida por un buzzer.
+FLEXI es un prototipo tecnológico diseñado para identificar cambios en la postura corporal mediante un sensor de movimiento MPU6050. El sistema utiliza un microcontrolador ESP32-S3 para procesar la información y activar una alerta sonora cuando detecta una inclinación inadecuada durante un tiempo determinado.
 
-2. Objetivo general
+## 2. Objetivo general
 
-Desarrollar un sistema electrónico capaz de detectar la inclinación y generar una alerta sonora cuando se presente una condición determinada.
+Desarrollar un sistema electrónico que ayude a reconocer posturas inadecuadas mediante sensores y genere alertas para fomentar una mejor postura corporal.
 
-3. Funcionamiento
+## 3. Componentes principales
 
-El prototipo utiliza un sistema electrónico que permite identificar cambios de inclinación. Cuando se detecta una condición establecida en la programación, se activa un buzzer para emitir una alerta.
+- ESP32-S3: procesa la información del sistema.
+- MPU6050: sensor que detecta inclinación y movimiento.
+- Buzzer pasivo: genera las alertas sonoras.
+- Protoboard y cables: permiten realizar las conexiones.
 
-4. Materiales y componentes
+## 4. Funcionamiento
 
-ESP32: microcontrolador encargado de procesar la información.
+El sensor MPU6050 registra los movimientos y la inclinación. El ESP32-S3 analiza los datos y los compara con la posición de referencia establecida durante la calibración. Cuando detecta una inclinación que supera el límite configurado durante el tiempo establecido, activa el buzzer como advertencia.
 
-MPU6050: sensor que detecta cambios de inclinación y movimiento.
+## 5. Tecnologías utilizadas
 
-Buzzer: dispositivo que emite la alerta sonora.
+- Arduino IDE.
+- Lenguaje de programación C++.
+- Microcontrolador ESP32-S3.
+- Comunicación I2C.
 
-Protoboard: utilizada para realizar las conexiones.
+## 6. Estructura del repositorio
 
-Cables jumper: permiten conectar los componentes.
+- `codigo/`: contiene el programa del proyecto.
+- `documentacion/`: contiene el documento técnico.
+- `imagenes/`: contiene fotografías del prototipo.
+- `diagrama/`: contiene el diagrama y la explicación de las conexiones.
 
-Arduino IDE: programa utilizado para escribir y cargar el código.
+## 7. Integrantes
 
-5. Desarrollo del proyecto
+Proyecto desarrollado por el equipo de trabajo escolar.
 
-En esta sección se explicará el proceso de construcción, programación y conexión de los componentes electrónicos.
+## 8. Estado del proyecto
 
-6. Evidencias
+Prototipo funcional.
 
-Se agregarán fotografías del montaje, los componentes y el funcionamiento del prototipo.
+## 9. Propósito
 
-7. Pruebas y resultados
-
-Se documentarán las pruebas realizadas y los resultados obtenidos durante el funcionamiento del sistema.
-
-8. Integrantes
-
-[Escribir los nombres de los integrantes del equipo].
-
-9. Conclusión
-
-FLEXI busca demostrar cómo la electrónica y la programación pueden utilizarse para desarrollar un sistema de detección de inclinación con una alerta sonora.
+FLEXI busca promover hábitos posturales saludables mediante el uso de tecnología y alertas que permitan reconocer posiciones inadecuadas.
