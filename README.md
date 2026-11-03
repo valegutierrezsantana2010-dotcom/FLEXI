@@ -14,17 +14,17 @@ El prototipo utiliza un sistema electrónico que permite identificar cambios de 
 
 4. Materiales y componentes
 
-Microcontrolador: [Completar].
+ESP32: microcontrolador encargado de procesar la información.
 
-Sensor de inclinación: [Completar].
+MPU6050: sensor que detecta cambios de inclinación y movimiento.
 
-Buzzer o zumbador.
+Buzzer: dispositivo que emite la alerta sonora.
 
-Cables de conexión.
+Protoboard: utilizada para realizar las conexiones.
 
-Protoboard.
+Cables jumper: permiten conectar los componentes.
 
-Otros materiales utilizados: [Completar].
+Arduino IDE: programa utilizado para escribir y cargar el código.
 
 5. Desarrollo del proyecto
 
